@@ -5,12 +5,61 @@
 html, body {
     padding: 25px;
     height: 100%;
+    width: auto;
 }
 
 body{
     background: url(Image/Desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 100px;
+
+}
+.commu{
+    background: url("image/Commu.png");
+    background-size: cover;
+    width: 35vw;
+    height: 25vw;
+}
+.register{
+    background: url("Image/button.png");
+    background-size: cover;
+    width: 200px;
+    height: 58px;
+}
+.register:hover{
+    background: url("Image/Button2.png");
+    background-size: cover;
+    width: 200px;
+    height: 58px;
+}
+#text{
+    width: 26vw;
+    height: 305px;
+}
+.title{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 40px;
+}
+.subtitle{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 24px;
+    line-height: 27px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    width: 10vw;
+    height: 40px;
+    float: right;
+    margin-top: 150px;
 }
 
 
@@ -19,5 +68,61 @@ body{
         background: url("Image/fontmobile.png");
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    
+    }
+    .commu{
+        background: url("image/Commu.png");
+        background-size: cover;
+        width: 400px;
+        height: 280px;
+    }
+    #text{
+        width: 45vw;
+        height: 272px;
+        text-align: center;
+
+    }
+    .register{
+        background: url("Image/button.png");
+        background-size: cover;
+        width: 200px;
+        height: 58px;
+        margin-left: 20px;
+
+    }
+    .register:hover{
+        background: url("Image/Button2.png");
+        background-size: cover;
+        width: 200px;
+        height: 58px;
+    }
+
+    .title{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 3.5vw;
+    }
+    .subtitle{
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        font-size: 2.5vw;
+        line-height: 4vw;
+    }
+    footer{
+        display: flex;
+        flex-flow: row;
+        align-content: flex-start;
+        width: 152px;
+        height: 40px;
+        margin-top: 20vw;
+        margin-right: 21vw;
+
+    
     }
 }
