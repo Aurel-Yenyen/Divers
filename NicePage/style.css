@@ -10,29 +10,29 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;}   
-    .burger{
+    #burger{
         width: 42px;
         height: 24px;
         position: relative;
         cursor: pointer;
         padding-top: 20px;}
-    .span{
+    .burger{
        width: 30px;
        height: 4px;
        background-color: black;
        display: flex;
        flex-direction: column;
        border: none;}
-    .span::before, .span::after{
+    .burger::before, .burger::after{
         content: "";
         position: absolute;
         width: 30px;
         height: 4px;
         background-color: black;
         align-self: center;}
-    .span::before{
+    .burger::before{
         transform: translateY(-12px);}
-    .span::after{
+    .burger::after{
         transform: translateY(10px);}
     .container{
         background: #333333d3;
@@ -68,10 +68,7 @@ header{
         font-size: 18px;
         color: white;
         margin-right: 50px;}
-
-
 footer{
     background-color: #2E10DD;
     width: auto;
-    height: 200px;
-}
+    height: 200px;}
