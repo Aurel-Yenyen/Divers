@@ -1,0 +1,65 @@
+body{
+    background-color: #E5E5E5;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;}
+header{
+    background-color: white;
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;}   
+    .burger{
+        width: 42px;
+        height: 24px;
+        position: relative;
+        cursor: pointer;
+        padding-top: 20px;}
+    span{
+       width: 30px;
+       height: 4px;
+       background-color: black;
+       display: block;
+       top: 50%;
+       transform: translateY(-50%);
+       position: absolute;}
+    span::before, span::after{
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background-color: black;}
+    span::before{
+        transform: translateY(-10px);}
+    span::after{
+        transform: translateY(10px);}
+    .modal-container{
+        background: #333333d3;
+        width: 200px;
+        height: 500px;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 25px;
+        position: fixed;}
+    .orverlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;}
+    .modal{
+        max-width: 150px;
+        min-width: 50px;
+        padding: 30px;
+        border-radius: 5%;
+        position: absolute;
+        top: 5%;
+        left: 50%;}
+        .close_modal{
+            padding: 8px 10px;
+            border: none;
+        }
+footer{
+    background-color: #2E10DD;
+    width: auto;
+    height: 200px;
+}
