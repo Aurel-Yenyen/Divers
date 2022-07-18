@@ -16,28 +16,27 @@ header{
         position: relative;
         cursor: pointer;
         padding-top: 20px;}
-    span{
+    .span{
        width: 30px;
        height: 4px;
        background-color: black;
-       display: block;
-       top: 50%;
-       transform: translateY(-50%);
-       position: absolute;}
-    span::before, span::after{
+       display: flex;
+       flex-direction: column;}
+    .span::before, .span::after{
         content: "";
         position: absolute;
         width: 30px;
-        height: 4px;
-        background-color: black;}
-    span::before{
-        transform: translateY(-10px);}
-    span::after{
+        height: 6px;
+        background-color: black;
+        align-self: center;}
+    .span::before{
+        transform: translateY(-15px);}
+    .span::after{
         transform: translateY(10px);}
-    .modal-container{
+    .container{
         background: #333333d3;
-        width: 200px;
-        height: 500px;
+        width: 250px;
+        height: 1000px;
         display: flex;
         flex-direction: row-reverse;
         padding: 25px;
@@ -47,17 +46,29 @@ header{
         width: 100%;
         height: 100%;}
     .modal{
-        max-width: 150px;
+        max-width: 200px;
         min-width: 50px;
         padding: 30px;
         border-radius: 5%;
-        position: absolute;
         top: 5%;
-        left: 50%;}
-        .close_modal{
-            padding: 8px 10px;
-            border: none;
-        }
+        left: 50%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-direction: column;}
+    .close_modal{
+        padding: 8px 10px;
+        border: none;
+        background: none;
+        color: white;
+        font-size: 24px;
+        margin-left: 50px;}
+    .para{
+        font-size: 18px;
+        color: white;
+        margin-right: 50px;}
+
+
 footer{
     background-color: #2E10DD;
     width: auto;
