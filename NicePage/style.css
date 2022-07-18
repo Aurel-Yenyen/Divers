@@ -21,16 +21,17 @@ header{
        height: 4px;
        background-color: black;
        display: flex;
-       flex-direction: column;}
+       flex-direction: column;
+       border: none;}
     .span::before, .span::after{
         content: "";
         position: absolute;
         width: 30px;
-        height: 6px;
+        height: 4px;
         background-color: black;
         align-self: center;}
     .span::before{
-        transform: translateY(-15px);}
+        transform: translateY(-12px);}
     .span::after{
         transform: translateY(10px);}
     .container{
