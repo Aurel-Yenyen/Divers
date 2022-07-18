@@ -94,6 +94,7 @@ footer{
     background: url("Image/twitter2.png");
     width: 40px;
     height: 40px;
+    padding: 0%;
 }
 .insta:hover{
     background: url("Image/insta2.png");
