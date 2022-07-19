@@ -2,11 +2,12 @@ body{
     background-color: #E5E5E5;
     box-sizing: border-box;
     padding: 0;
-    margin: 0;}
+    margin: 0;
+    height: 100%;}
 header{
     background-color: white;
     width: auto;
-    height: 50px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;}   
@@ -15,18 +16,19 @@ header{
     width: 42px;
     height: 24px;
     position: relative;
-    padding-top: 20px;}
+    padding-top: 35px;
+    margin-right: 20%;}
 .burger{
-    width: 30px;
-    height: 4px;
+    width: 25px;
+    height: 3px;
     background-color: black;
     display: flex;
     flex-direction: column;}
 .burger::before, .burger::after{
     content: "";
     position: absolute;
-    width: 30px;
-    height: 4px;
+    width: 25px;
+    height: 3px;
     background-color: black;
     align-self: center;}
 .burger::before{
@@ -35,24 +37,144 @@ header{
     transform: translateY(10px);}
     /* Fenêtre Modal */
 .modal{
-    background-color: black);
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(7, 7, 7, .7);
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    position: absolute;}
+    position: absolute;
+    transition: 3s;}
+.modal:target{
+    visibility: visible;
+    opacity: 1;}
 .modal-content{
-    background-color: rgba(7, 7, 7, .7);
-    width: 250px;
-    height: 600px;
+    background-color: #30302F;
+    width: 150px;
+    height: 800px;
     max-width: 25%;
-
-}
-
-
-
-
-footer{
+    display: block;
+    padding: 25px;}
+.modal_close{
+    color: white;
+    font-size: 30px;
+    justify-self: right;
+    text-decoration: none;}
+.para{
+    color: white;
+    padding: 50px;
+    justify-self: left;}
+     /* Logo */
+.logo{
+    background: url(Image/Sans\ titre.png);
+    background-size: cover;
+    width: 80px;
+    height: 50px;
+    margin-left: 20%;
+    margin-top: 10px;}
+     /* Contener */
+#block{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;}
+.contener{
+    width: 13%;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0px 0px 3px grey;
+    border-radius: 0px 0px 15px 15px;
+    margin: 15px;}
+    /* Bande */
+.bande1{
+    width: 100%;
+    height: 20px;
+    background-color: #E142DC;}
+.bande2{
+    width: 100%;
+    height: 20px;
+    background-color: #2CBECC;}
+.bande3{
+    width: 100%;
+    height: 20px;
+    background-color: #6751E7;}
+.bande4{
+    width: 100%;
+    height: 20px;
+    background-color: #F1C50E;}
+    /* Icône */
+.logo1{
+    width: 10px;
+    height: 10px;
+    background: url(Image/loupe.png);
+    padding: 25px;
+    margin-top: 20px;
+    margin-left: 80px;}   
+.logo2{
+    width: 10px;
+    height: 10px;
+    background: url(Image/tampon.png);
+    padding: 25px;
+    margin-top: 20px;
+    margin-left: 80px;} 
+.logo3{
+    width: 10px;
+    height: 10px;
+    background: url(Image/cone.png);
+    padding: 25px;
+    margin-top: 20px;
+    margin-left: 80px;}
+.logo4{
+    width: 10px;
+    height: 10px;
+    background: url(Image/book.png);
+    padding: 25px;
+    margin-top: 20px;
+    margin-left: 80px;}
+    /* Text */
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+    width: 600px;
+    margin-left: 550px;}
+.text{
+    text-align: center;
+    font-family: sans-serif;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;}
+.subtitle{
+    font-size: 20px;
+    font-weight: lighter;}
+.subtitle2{
+    margin: 25px;
+    font-size: 15px;
+    line-height: 30px;}
+.contact{
+    background: url(Image/contact.png);
+    width: 300px;
+    height: 100px;
+    background-repeat: no-repeat;
+    margin-left: 40%;
+    cursor: pointer;} 
+.contact:hover{
+    ^m)=^gbg$c¨zù&
+    background: url(Image/contact2.png);
+    width: 300px;
+    height: 100px;
+    background-repeat: no-repeat;
+    margin-left: 40%;
+    cursor: pointer;} 
+#block{
+    display: flex;
+}  
+    /* Bas de Page */
+     
+     footer{
     background-color: #2E10DD;
     width: auto;
-    height: 200px;}
+    height: 199px;}
