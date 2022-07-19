@@ -167,10 +167,7 @@ header{
     height: 100px;
     background-repeat: no-repeat;
     margin-left: 40%;
-    cursor: pointer;} 
-#block{
-    display: flex;
-}  
+    cursor: pointer;}  
     /* Bas de Page */
      
      footer{
